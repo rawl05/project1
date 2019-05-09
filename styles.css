@@ -1,0 +1,151 @@
+.header{
+  width: 100%;
+  position: relative;
+  box-shadow: 5px #888888;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  border-color: #d4d4d4;
+  padding: 10px;
+  margin: auto;
+  border-style: solid;
+
+}
+
+
+
+.inputf{
+  width: 90%;
+  margin: 5px;
+  border: 0;
+  border-bottom: 1px solid grey;
+  outline: 0;
+}
+
+.inputfl{
+  width: 100%;
+  height: 80%;
+}
+
+.checked {
+  color: orange;
+}
+
+.primary-btn{
+ border: 1px;
+  background-color: #1da578e0;
+ height: 50px;
+ width:310px;
+ border-radius:3px;
+ color:white;
+ font-size: 22px;
+ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+margin-bottom:12%;
+margin-top:40px;
+}
+
+.vot-container{
+  text-align: left;
+  position:relative;
+  margin-left:4%;
+  width: 80%;
+}
+
+.secondary-btn{
+  background-color: white;
+ height: 50px;
+ width:250px;
+  font-size: 22px;
+   margin: 20px;
+ border-radius:3px;
+ color:black;
+ font-size: 22px;
+ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+margin-bottom:12%;
+margin-top:40px;
+border:1px;
+}
+
+.container{
+  text-align: center;
+  background-color: ;
+  /*width: 100%;
+  height: 100%;*/
+  margin: 0px;
+  position:relative;
+  top: 100px;
+}
+.container2{
+font-size:25px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+margin-top:6%;
+  position: relative;
+  bottom: 0px;
+}
+
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-0%, -70%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.grid-item:hover .image {
+  opacity: 0.3;
+}
+
+.grid-item:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: auto;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+  }
+
+  .buttonform{
+    position: absolute;
+    top: 5%;
+    left: 60%;
+
+  }
+.submitbut{
+ border: 1px;
+  background-color:grey;
+ height: 50px;
+ width:310px;
+ border-radius:3px;
+ color:white;
+ font-size: 22px;
+ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+margin-bottom:12%;
+margin-top:40px;
+}

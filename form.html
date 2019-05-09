@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Voting</title>
+</head>
+<body>
+  <div class="header">
+    <img style="position:relative;left: 0px;top: 0px;box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);padding-right:86.5%" src="quantiphi-logo.png" alt="">
+  </div>
+
+  <div class="vot-container">
+
+    <h2 style="margin-top:4%;margin-bottom:4px ; font-size: 40px;font-weight: lighter;">Department: Facilities</h2>
+   <h3 style="font-weight: lighter;margin-top: 0px;margin-bottom: 5%"> Lorem ipsum dolor sit amet,consectetur adipiscing elit.Nunc placerat urna nec quam convallis,utmollis <br>
+dui vulputate.Sed id turpis vitae lacus porta aliquet lobortis quis nisi.Ut eget mollis odio.<br></h3>
+<b>Choose Your Mascot for Facilities</b>(hover over each mascot to know its meaning)
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="mascot.jpg" alt="" height="200" width="200" class="image"  onclick="myFunction()">
+    <p id="mascot1">Hello</p><div class="middle"><div class="text">Your text goes here!</div></div></div>
+  <div class="grid-item"><img src="mascot.jpg" alt="" height="200" width="200" class="image" onclick="myFunction()"><p id="mascot1" >Hello</p><div class="middle"><div class="text">Your text goes here2!</div></div></div>
+  <div class="grid-item"><img src="mascot.jpg" alt="" height="200" width="200" class="image"onclick="myFunction()"><p id="mascot1">Hello</p><div class="middle"><div class="text">Your text goes here3!</div></div></div>
+  <div class="grid-item"><img src="mascot.jpg" alt="" height="200" width="200" class="image"onclick="myFunction()"><p id="mascot1">Hello</p><div class="middle"><div class="text">Your text goes here4!</div></div></div>
+  <div class="grid-item"><img src="mascot.jpg" alt="" height="200" width="200" class="image"onclick="myFunction()"><p id="mascot1">Hello</p><div class="middle"><div class="text">Your text goes here5!</div></div></div>
+  <div class="grid-item"><img src="mascot.jpg" alt="" height="200" width="200" class="image"onclick="myFunction()"><p id="mascot1">Hello</p><div class="middle"><div class="text">Your text goes here6!</div></div></div>
+</div>
+<form class="forms" action="index.html" method="post">
+<div class="grid-container2" id="form">
+
+    <div class="grid-item2">
+      <p><b>Overall rating for Facilities</b>(1- lowest, 5- highest)<br></p>
+      <p>Star Rating
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span></p>
+
+      <p>Share your reason for selecting <span id="display"></span></p>
+      <p><label><input type="checkbox" name="vehicle2" > 1 dsfsd sdfsd<br></label>
+      <label><input type="checkbox" name="vehicle2"> 1 dsfsd sdfsd<br></label>
+      <label><input type="checkbox" name="vehicle2" value=""> 1 dsfsd sdfsd<br></label>
+      <label><input type="checkbox" name="vehicle2" value=""> 1 dsfsd sdfsd<br></p></label>
+    </div>
+
+    <div class="grid-item2">
+      <b>Any more reasons?</b><br>
+      <input type="text" name="type" value="" class="inputf" id="txt" placeholder="Hello type here"><br>
+      <input type="text" name="type" value="" class="inputf" id="txt" placeholder="Hello type here"><br>
+      <input type="text" name="type" value="" class="inputf" id="txt" placeholder="Hello type here"><br>
+      <input type="text" name="type" value="" class="inputf" id="txt" placeholder="Hello type here"><br>
+      <input type="text" name="type" value="" class="inputf" id="txt" placeholder="Hello type here"><br>
+      <input type="text" name="type" value="" class="inputf" id="txt" onkeyup="manage(this)" placeholder="Hello type here">
+
+    </div>
+    <div class="grid-item2">
+      <b>Sugessions!</b><br>
+      <textarea name="name" class="inputfl" id="txt2" onkeyup="manage(this)" placeholder="Loremipsumdolorsitamet,consecteturadipiscingelit.Nuncplaceraturnanecquamconvallis,utmollis duivulputate.Sedidturpisvitaelacusportaaliquetlobortisquisnisi.Utegetmollisodio."></textarea>
+    </div>
+
+
+</div>
+<div class="buttonform">
+  <button type="submit" name="button" class="submitbut" id="btSubmit" disabled="">MOVE ON TO THE NEXT DEPARTMENT</button>
+</div>
+
+</form>
+
+    </div>
+
+
+    <script type="text/javascript">
+  //  window.onload = function(){document.getElementById("form").style.display = "none"; };
+
+      function myFunction() 
+      {
+        showmascot();
+        display();
+
+
+       }
+
+      function showmascot(){
+        document.getElementById('display').innerHTML =
+                    document.getElementById("mascot1").value;
+      }
+      function display() {
+        document.getElementById("form").style.display = "grid";
+      }
+
+      function manage(txt) {
+        var bt = document.getElementById('btSubmit');
+        if (txt.value!='' && txt2.value!='') {
+            bt.disabled = false;
+            bt.style.backgroundColor="green";
+        }
+        else if(txt.value == '' && txt2.value==''){
+            bt.disabled =true;
+            bt.style.backgroundColor="grey";
+        }
+    }
+
+
+    </script>
+
+</body>
+</html>
